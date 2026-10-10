@@ -1,0 +1,18 @@
+experiment_name: a1_exp2_incidente_normalizacao
+pergunta: "Por que o treino fica ruim sem normalizar as features, e a normalizacao resolve?"
+run_name: D_sem_scaler
+
+# --- dados ---
+seed: 42
+test_size: 0.15
+val_size: 0.15
+normalize: false
+
+# --- modelo ---
+hidden_layers: [16, 8]
+
+# --- treino ---
+lr: 0.01
+weight_decay: 0.0   # regularizacao L2
+epochs: 50
+batch_size: 32

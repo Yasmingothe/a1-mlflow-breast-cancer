@@ -1,0 +1,18 @@
+experiment_name: a1_exp1_hiperparametros
+pergunta: "Qual combinacao de taxa de aprendizado e regularizacao L2 da o melhor resultado na validacao?"
+run_name: A_referencia
+
+# --- dados ---
+seed: 42
+test_size: 0.15
+val_size: 0.15
+normalize: true
+
+# --- modelo ---
+hidden_layers: [16, 8]
+
+# --- treino ---
+lr: 0.01
+weight_decay: 0.0   # regularizacao L2
+epochs: 50
+batch_size: 32
