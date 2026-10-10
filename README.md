@@ -120,11 +120,11 @@ Só mudam a taxa e o L2.
 
 Perda de validação das três runs, por época:
 
-![Perda de validação das runs A, B e C](docs/01_val_loss.png)
+![Perda de validação das runs A, B e C](docs/01_val_loss.jpg)
 
 Perda de treino das três runs, por época:
 
-![Perda de treino das runs A, B e C](docs/02_train_loss.png)
+![Perda de treino das runs A, B e C](docs/02_train_loss.jpg)
 
 O que eu observei:
 
@@ -155,15 +155,15 @@ classificado como benigno, que é o erro mais grave nesse tipo de problema.
 
 Métricas e tags da run escolhida no MLflow:
 
-![Métricas e tags da run escolhida](docs/03_run_escolhida.png)
+![Métricas e tags da run escolhida](docs/03_run_escolhida.jpg)
 
 Matriz de confusão do teste, guardada como artefato:
 
-![Matriz de confusão do teste](docs/04_matriz_teste.png)
+![Matriz de confusão do teste](docs/04_matriz_teste.jpg)
 
 Trace da run, com as etapas e o tempo de cada uma:
 
-![Trace com as etapas preparar, treinar e validar](docs/05_trace.png)
+![Trace com as etapas preparar, treinar e validar](docs/05_trace.jpg)
 
 ## Experimento 2 — diagnóstico do incidente
 
@@ -185,7 +185,7 @@ normalização resolve?
 
 Perda de validação das runs D (sem scaler) e E (com scaler):
 
-![Perda de validação das runs D e E](docs/06_incidente.png)
+![Perda de validação das runs D e E](docs/06_incidente.jpg)
 
 Todos os prints estão na pasta `docs/`.
 
