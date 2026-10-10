@@ -118,6 +118,14 @@ Só mudam a taxa e o L2.
 
 **Escolhi a run C**, porque teve a menor perda de validação.
 
+Perda de validação das três runs, por época:
+
+![Perda de validação das runs A, B e C](docs/01_val_loss.png)
+
+Perda de treino das três runs, por época:
+
+![Perda de treino das runs A, B e C](docs/02_train_loss.png)
+
 O que eu observei:
 
 - A e C acertam 85 de 86 exames na validação, e a B acerta 84. Com tão poucos
@@ -145,6 +153,18 @@ O que eu observei:
 O modelo errou 1 exame em 86. Foi um falso negativo: um tumor maligno
 classificado como benigno, que é o erro mais grave nesse tipo de problema.
 
+Métricas e tags da run escolhida no MLflow:
+
+![Métricas e tags da run escolhida](docs/03_run_escolhida.png)
+
+Matriz de confusão do teste, guardada como artefato:
+
+![Matriz de confusão do teste](docs/04_matriz_teste.png)
+
+Trace da run, com as etapas e o tempo de cada uma:
+
+![Trace com as etapas preparar, treinar e validar](docs/05_trace.png)
+
 ## Experimento 2 — diagnóstico do incidente
 
 **Pergunta:** por que o treino fica ruim sem normalizar os dados, e a
@@ -163,7 +183,11 @@ normalização resolve?
   0,93 para 0,99. O recall sobe de 0,84 para 0,97, ou seja, o modelo deixa de
   perder cerca de 16% dos tumores malignos e passa a perder cerca de 3%.
 
-Os prints do MLflow estão na pasta `docs/`.
+Perda de validação das runs D (sem scaler) e E (com scaler):
+
+![Perda de validação das runs D e E](docs/06_incidente.png)
+
+Todos os prints estão na pasta `docs/`.
 
 ## Uso de IA generativa
 
