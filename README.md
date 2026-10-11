@@ -7,7 +7,7 @@ e etapas da execução.
 
 - Disciplina: Inteligência Artificial 2026/2 — Sistemas de Informação — UNITINS
 - Aluna: Yasmin Dos Santos Gothe
-- Vídeo: LINK_DO_VIDEO
+- Vídeo: https://youtu.be/UfcWC7qufZU
 
 ## O problema
 
